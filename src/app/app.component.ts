@@ -1,3 +1,4 @@
+import { User } from './user';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular-cli';
+  title = 'Tasks';
+  upperText = 'Mostra em maiscula';
+  user: User = {
+    name: 'Anderson',
+    age: 22
+  };
 }
